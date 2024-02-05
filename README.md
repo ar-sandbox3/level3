@@ -19,5 +19,5 @@ func Initialize() (*sqlx.DB, error) {
 > For example, binding to the host network:
 >
 > ```console
-> docker run --rm -it -p 3306:3306 --net=host -v `pwd`/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=level3 mysql:8
+> docker run --rm -it --net=host -v `pwd`/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=level3 mysql:8
 > ```
